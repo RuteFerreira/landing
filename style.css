@@ -1,0 +1,67 @@
+/* Write some CSS below */
+body{
+	font-family: Arial,sans-serif;
+	color: #404042;
+	font-size: 18px;
+	margin: 0;
+}
+
+h1{
+	color: #054EBF;
+	font-family: 'Rubik Beastly';
+	font-size: 60px;
+
+}
+a{
+	background-color: #1A48E3;
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #0D1EC6;
+}
+.banner {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	padding: 150px 10px;
+	text-align: center;
+	color: white;
+}
+.banner h1{
+	margin: 0;
+}
+.btn-blue {
+	padding: 15px 10px;
+	border-radius: 5px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.card-white {
+	background-color: white;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin: 8px;
+	padding: 20px;
+}
+.cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+@media (max-width: 900px){
+	.cards{
+		grid-template-columns: 1fr 1fr;
+	}
+	.container{
+		max-width: 650px;
+	}
+}
+@media(max-width: 600px){
+	.cards{
+		grid-template-columns: 1fr;
+	}
+	.container{
+		max-width: 400px;
+	}
+}
